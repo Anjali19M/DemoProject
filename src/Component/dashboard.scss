@@ -1,0 +1,116 @@
+.dashboard_main_container {
+    padding: 15px 0px;
+    margin: 0;
+    display: flex;
+    width: 100%;
+
+    .dashboard_left {
+        background-color: #ffffff;
+        border-radius: 0 12px 12px 0;
+        box-shadow: 0 0 11px 4px rgba(0, 0, 0, 0.1);
+        width: 20%;
+        // height: 950px;
+        max-height: 1315px;
+
+        .tabs_label_container {
+            margin: 15px;
+
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #ffffff;
+            background-color: #398f9b;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .nav_label {
+            color: #000000;
+            font-size: 15px;
+            display: flex;
+            font-weight: 500;
+
+            img {
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .dashboard_right {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .search_bar_container {
+        padding: 10px 0;
+        text-align: left;
+
+        .searchBar {
+            border: 1px solid #eee;
+            font-size: 14px;
+            padding: 5px;
+            border-radius: 5px;
+            outline: none;
+        }
+    }
+        .table_container {
+            border: 1px solid #eee;
+            // border: 1px solid #000;
+            border-radius: 5px;
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 100%;
+            overflow-y: auto;
+            height: 100vh;
+
+            .historyTable {
+                width: 100%;
+
+                thead {
+                    background-color: #f8f8f8;
+                }
+
+                thead th {
+                    border-bottom: 1px solid #eee;
+                    border-top: none;
+                    white-space: nowrap;
+                    font-size: 14px;
+                }
+
+                tbody tr td {
+                    font-size: 13px;
+                }
+
+                .alignCenter {
+                    text-align: left;
+                }
+
+                thead th,
+                tbody td {
+                    padding: 15px;
+                }
+
+                thead th:first-child {
+                    border-top-left-radius: 5px;
+                }
+
+                thead th:last-child {
+                    border-top-right-radius: 5px;
+                }
+            }
+
+            .displayUnset {
+                display: revert;
+            }
+        }
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: grey;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
